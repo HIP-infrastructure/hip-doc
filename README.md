@@ -31,18 +31,9 @@ app-in-browser allows controlling 3D accelerated graphic sessions in the browser
 [app-in-browser Github](https://github.com/HIP-infrastructure/app-in-browser)
 
 
-To be integrated   
-https://github.com/manikbh/HIP-doc
-- Bids Manager
-- Brainstorm
-- CCEP
-- Freesurfer
-- Intranat
+### User documentation   
+ [Documentation for HIP users](./hip-userdoc.md)
 
-- TVB (The Virtual Brain)
-  - [HIP TVB app](https://github.com/ins-amu/hip-tvb-app)
-  - [TVB Pipeline](https://github.com/ins-amu/tvb-pipeline)
-  - [Bayesian Virtual Epileptic Patient](https://github.com/ins-amu/BVEP)
 
 ### Frontend
 - Meta package for the HIP frontend, which contains 
@@ -52,6 +43,5 @@ https://github.com/manikbh/HIP-doc
 
 ### Workflows
 - [Workflows to be integrated](./workflows.md)
-
 
 
