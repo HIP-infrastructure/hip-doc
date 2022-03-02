@@ -56,8 +56,10 @@ The most commonly encountered issues and their solution.
    :caption: HIP tutorials 
    :hidden:   
    
-   Epileptogenicity map computation with brainstorm [U/C]<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
-   Electrode placement with intranat [TODO]<tutorials/TUTORIAL_Electrode_placement_with_intranat>
+   SEEG electrode placement with IntrAnat [TODO]<tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat>
+   SEEG electrode placement with Brainstorm [U/C]<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
+   Epileptogenicity map computation with Brainstorm [U/C]<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
+
    
 .. toctree:: 
    :caption: HIP datasets

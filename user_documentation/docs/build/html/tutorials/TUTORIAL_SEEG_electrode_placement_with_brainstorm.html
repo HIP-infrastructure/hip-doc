@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Epileptogenicity map computation with Brainstorm &mdash; HIP user documentation 0.1 documentation</title>
+  <title>SEEG electrode placement with Brainstorm &mdash; HIP user documentation 0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Epimap tutorial dataset" href="../datasets/DATASET_Epimap.html" />
-    <link rel="prev" title="SEEG electrode placement with Brainstorm" href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html" /> 
+    <link rel="next" title="Epileptogenicity map computation with Brainstorm" href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html" />
+    <link rel="prev" title="Electrode placement with IntrAnat (TODO)" href="TUTORIAL_SEEG_electrode_placement_with_intranat.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,8 +52,7 @@
 <p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_intranat.html">SEEG electrode placement with IntrAnat [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm [U/C]</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Epileptogenicity map computation with Brainstorm [U/C]</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SEEG electrode placement with Brainstorm [U/C]</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#disclaimer">Disclaimer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#about-this-tutorial">About this tutorial</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#objective">Objective</a></li>
@@ -62,10 +61,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#prepare-the-working-environment">Prepare the working environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#compute-a-map-of-epileptogenicity">Compute a map of epileptogenicity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#place-seeg-electrodes-with-brainstorm">Place SEEG electrodes with Brainstorm</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm [U/C]</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
@@ -103,9 +102,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Epileptogenicity map computation with Brainstorm</li>
+      <li>SEEG electrode placement with Brainstorm</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -113,12 +112,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="epileptogenicity-map-computation-with-brainstorm">
-<h1>Epileptogenicity map computation with Brainstorm<a class="headerlink" href="#epileptogenicity-map-computation-with-brainstorm" title="Permalink to this headline"></a></h1>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../_images/tutorial_epileptogenicity_header.png"><img alt="../_images/tutorial_epileptogenicity_header.png" src="../_images/tutorial_epileptogenicity_header.png" style="width: 600px;" /></a>
+  <section id="seeg-electrode-placement-with-brainstorm">
+<h1>SEEG electrode placement with Brainstorm<a class="headerlink" href="#seeg-electrode-placement-with-brainstorm" title="Permalink to this headline"></a></h1>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/tutorial_seeg_placement_brainstorm_header.png"><img alt="../_images/tutorial_seeg_placement_brainstorm_header.png" src="../_images/tutorial_seeg_placement_brainstorm_header.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>Epileptogenicity map.</strong> <em>Epileptogenicity map computed and visualized using</em> <a class="reference internal" href="../applications/APP_Brainstorm.html"><span class="doc">Brainstorm</span></a> <em>.</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>3D visualization of SEEG electrodes.</strong> <em>SEEG electrodes have been generated and placed using</em> <a class="reference internal" href="../applications/APP_Brainstorm.html"><span class="doc">Brainstorm</span></a> <em>.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="disclaimer">
@@ -130,26 +129,21 @@ research purposes only.</p>
 <h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
 <section id="objective">
 <h3>Objective<a class="headerlink" href="#objective" title="Permalink to this headline"></a></h3>
-<p>The objective of this tutorial is to guide HIP users in computing maps of epileptogenicity from ictal iEEG recordings.</p>
-<p>Epileptogenicity maps show the spatial distribution, and eventually the temporal progression,
-of the Epileptogenicity Index (EI) in the subject’s brain.
-The EI, is based on both spectral and temporal properties of iEEG signals
-and quantifies the presence of high-frequency oscillations also referred as <em>rapid discharges</em>.
-<em>Rapid discharges</em> have long been recognized as a characteristic electrophysiological pattern of the epileptogenic zone
-and can help identify brain regions generating seizures (<a class="reference internal" href="#bartolomei-2008" id="id1"><span>[Bartolomei_2008]</span></a>).</p>
-<p>This tutorial consists of 2 parts which cover <a class="reference internal" href="#prepare-environment-epileptogenicity-brainstorm"><span class="std std-ref">the preparation of the working environment</span></a> and
-<a class="reference internal" href="#compute-epileptogenicity-brainstorm"><span class="std std-ref">the computation of an epileptogenicty map</span></a>.</p>
+<p>The objective of this tutorial is to guide HIP users in placing SEEG electrodes on a post-implantation volume using Brainstorm.</p>
+<p>This tutorial consists of 2 parts which cover <a class="reference internal" href="#prepare-environment-seeg-placement-brainstorm"><span class="std std-ref">the preparation of the working environment</span></a> and
+<a class="reference internal" href="#place-seeg-brainstorm"><span class="std std-ref">the placement of SEEG electrodes</span></a></p>
 </section>
 <section id="scope">
 <h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline"></a></h3>
-<p>This tutorial illustrates the minimal steps to compute an epileptogenicity map on the HIP
-and primarly consists of video demonstration backed with a brief description of the performed steps.
-This tutorial should be viewed as a starter guide as it does not go into all the intricacies of epileptogenicity map computation.</p>
-<p>For more in-depth information regarding the computation of epileptogenicity maps using Brainstorm
-please refer to the following tutorial:</p>
+<p>This tutorial illustrates the minimal steps to place SEEG electrodes using Brainstorm on the HIP
+and primarly consists of a video demonstration backed with a brief description of the performed steps.
+This tutorial should be viewed as a starter guide as it does not go into all the intricacies of SEEG electrode placement.</p>
+<p>For more in-depth information regarding the placement of SEEG electrodes using Brainstorm
+please refer to the following official tutorials:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity">Brainstorm’s SEEG epileptogenicity maps tutorial</a></p></li>
+<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity#Editing_implantation_without_recordings">Brainstorm’s “Editing implantation without recordings” tutorial</a></p></li>
+<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity#Edit_the_contacts_positions">Brainstorm’s “Edit the contacts positions” tutorial</a></p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -171,54 +165,38 @@ please refer to the following tutorial:</p>
 </section>
 </section>
 <section id="prepare-the-working-environment">
-<span id="prepare-environment-epileptogenicity-brainstorm"></span><h2>Prepare the working environment<a class="headerlink" href="#prepare-the-working-environment" title="Permalink to this headline"></a></h2>
+<span id="prepare-environment-seeg-placement-brainstorm"></span><h2>Prepare the working environment<a class="headerlink" href="#prepare-the-working-environment" title="Permalink to this headline"></a></h2>
 <p><strong>Get the dataset</strong>: This tutorial relies on data available in the <a class="reference internal" href="../datasets/DATASET_Epimap.html"><span class="doc">Epimap tutorial dataset</span></a>
 which can be accessed in the corresponding <a class="reference external" href="https://thehip.app/apps/files/?dir=/HIP%20tutorials/Epileptogenicity%20map%20computation%20with%20Brainstorm/Datasets&amp;fileid=682152">publicly shared folder</a>.</p>
-<p>The following files will be used for this tutorial:</p>
+<p>A single file will be used for this tutorial:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>anat/MRI/3DT1pre_deface.nii</p></li>
 <li><p>anat/MRI/3DT1post_deface.nii</p></li>
-<li><p>anat/implantation/elec_pos_patient.txt</p></li>
-<li><p>seeg/SZ1.TRC</p></li>
-<li><p>seeg/SZ2.TRC</p></li>
-<li><p>seeg/SZ3.TRC</p></li>
 </ul>
 </div></blockquote>
-<p>Transfer those files into your private space so it is easier to access and use them.
+<p>Transfer it into your private space so it is easier to access and use it.
 If you don’t know how to do this please refer to the <a class="reference internal" href="../guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">How to use the HIP spaces</span></a> guide.</p>
-<p><strong>Start a new working session with Brainstorm</strong>: This tutorial only requires the use of Brainstorm for both the placement of SEEG electrodes
-and the computation of epileptogenicity maps. It is advised to initiate a new working sesssion with a fresh instance of Brainstorm running.
+<p><strong>Start a new working session with Brainstorm</strong>: This tutorial only requires the use of <a class="reference internal" href="../applications/APP_Brainstorm.html"><span class="doc">Brainstorm</span></a>
+for the placement of SEEG electrodes. It is advised to initiate a new working sesssion with a fresh instance of Brainstorm running.
 If you don’t know how to do this please refer to the <a class="reference internal" href="../guides/GUIDE_How_to_use_the_application_library_and_working_sessions.html"><span class="doc">How to use the application library and working sessions</span></a> guide.</p>
 </section>
-<section id="compute-a-map-of-epileptogenicity">
-<span id="compute-epileptogenicity-brainstorm"></span><h2>Compute a map of epileptogenicity<a class="headerlink" href="#compute-a-map-of-epileptogenicity" title="Permalink to this headline"></a></h2>
-<p>It is mandatory to have the 3D positions of the recording contacts of the SEEG electrodes in order to compute epileptogenicity maps.
-The contact names and coordinates of the SEEG electrodes are provided in the <em>elec_pos_patient.txt</em> implantation file that will
-be used in this tutorial.
-If you work on your own imaging data and wish to generate a dedicated implantation file, you can follow one of the following tutorials:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_intranat.html"><span class="doc">SEEG electrode placement with IntrAnat [TODO]</span></a></p></li>
-<li><p><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html"><span class="doc">SEEG electrode placement with Brainstorm [U/C]</span></a></p></li>
-</ul>
-</div></blockquote>
+<section id="place-seeg-electrodes-with-brainstorm">
+<span id="place-seeg-brainstorm"></span><h2>Place SEEG electrodes with Brainstorm<a class="headerlink" href="#place-seeg-electrodes-with-brainstorm" title="Permalink to this headline"></a></h2>
+<p>The accurate placement of SEEG electrodes requires some knowledge and a good understanding of the implantation procedure
+(an implantation scheme or equivalent), of the type of material that has been implanted (SEEG electrode type/characteristics),
+and some expertise in brain anatomy.
+It is also important to work on a high-resolution CT scan or T1 MRI scan acquired after the implantation of the depth electrodes so
+the recording contacts appear either in hypersignal or hyposignal.</p>
+<p>For confidentiality reasons, the implantation scheme will not be disclosed for this tutorial and the video demonstration focuses on the technical
+procedure in order to place SEEG electrodes and generate a standardized implantation file using Brainstorm.</p>
 <center>
-<video width="680"  poster="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm.png" controls>
-<source src="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm.mp4" type="video/mp4">
+<video width="680"  poster="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20SEEG%20electrode%20placement%20with%20Brainstorm.png" controls>
+<source src="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </center><div class="line-block">
 <div class="line"><br /></div>
 </div>
-</section>
-<section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
-<dl class="citation">
-<dt class="label" id="bartolomei-2008"><span class="brackets"><a class="fn-backref" href="#id1">Bartolomei_2008</a></span></dt>
-<dd><p>Bartolomei F, Chauvel P, Wendling F. Epileptogenicity of brain structures in human temporal lobe epilepsy: a quantified study from intracerebral EEG. Brain., 2008:131(Pt 7):1818-30.</p>
-</dd>
-</dl>
 </section>
 </section>
 
@@ -226,8 +204,8 @@ Your browser does not support the video tag.
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html" class="btn btn-neutral float-left" title="SEEG electrode placement with Brainstorm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../datasets/DATASET_Epimap.html" class="btn btn-neutral float-right" title="Epimap tutorial dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="TUTORIAL_SEEG_electrode_placement_with_intranat.html" class="btn btn-neutral float-left" title="Electrode placement with IntrAnat (TODO)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html" class="btn btn-neutral float-right" title="Epileptogenicity map computation with Brainstorm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
