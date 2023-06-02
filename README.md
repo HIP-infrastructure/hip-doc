@@ -23,6 +23,10 @@ Meta package for HIP user facing components and apis: NextCloud, HIP web app and
 [https://github.com/HIP-infrastructure/frontend]()
 
 ## Architecture 
+
+Context diagram
+![Overview](./images/c4-context-diagram.png)
+
 Container diagram
-![Overview](./images/architecture-overview.png)
+![Overview](./images/c4-container-diagram.png)
 
